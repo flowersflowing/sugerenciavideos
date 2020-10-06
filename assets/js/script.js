@@ -32,13 +32,25 @@ class Video {
         return this._videoMusica;
     }
 
+    set videoMusica(newVideoMusica) {
+        this._videoMusica = () => newVideoMusica;
+    }
+
     get videoPelicula() {
         return this._videoPelicula;
+    }
+
+    set videoPelicula(newVideoPelicula) {
+        this._videoPelicula = () => newVideoPelicula;
     }
 
     get videoSerie() {
         return this._videoSerie;
     }
+
+    set videoSerie(newVideoSerie) {
+        this._videoSerie = () => newVideoSerie;
+    }   
 }
 
 class Musica extends Video {
@@ -75,9 +87,9 @@ let musica = "https://www.youtube.com/embed/5qap5aO4i9A";
 let pelicula = "https://www.youtube.com/embed/4sYSyuuLk5g";
 let serie = "https://www.youtube.com/embed/BGobPQC6tQk";
 
-let videoMusic = new Musica(musica, pelicula, serie);
-let videoMovie = new Pelicula(musica, pelicula, serie);
-let videoSerie = new Serie(musica, pelicula, serie);
+let videoMusic = new Musica(musica, "", "");
+let videoMovie = new Pelicula("", pelicula, "");
+let videoSerie = new Serie("", "", serie);
 
 videoMusic.mostrarMusica();
 videoMovie.mostrarPelicula();
