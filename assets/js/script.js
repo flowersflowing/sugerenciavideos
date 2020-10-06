@@ -1,26 +1,3 @@
-// let videos = (() => {
-//     let viMusica = document.getElementById("musica");
-//     let viPelicula = document.getElementById("peliculas");
-//     let viSeries = document.getElementById("series");
-
-//     privateMusica = () => {
-//     }
-
-    
-//     privateMusica = () => {
-//     }
-
-
-//     privateMusica = () => {
-//     }
-
-//     return {
-//     }
-// });
-
-
-
-
 class Video {
     constructor(videoMusica, videoPelicula, videoSerie) {
         this._videoMusica = videoMusica;
