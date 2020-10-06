@@ -1,7 +1,7 @@
-let videos = (() => {
-    let viMusica = document.getElementById("musica");
-    let viPelicula = document.getElementById("peliculas");
-    let viSeries = document.getElementById("series");
+// let videos = (() => {
+//     let viMusica = document.getElementById("musica");
+//     let viPelicula = document.getElementById("peliculas");
+//     let viSeries = document.getElementById("series");
 
 //     privateMusica = () => {
 //     }
@@ -29,15 +29,15 @@ class Video {
     }
 
     get videoMusica() {
-        return this._videoMusica();
+        return this._videoMusica;
     }
 
     get videoPelicula() {
-        return this._videoPelicula();
+        return this._videoPelicula;
     }
 
     get videoSerie() {
-        return this._videoSerie();
+        return this._videoSerie;
     }
 }
 
