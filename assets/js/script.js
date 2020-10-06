@@ -46,7 +46,7 @@ class Pelicula extends Video {
     }
 
     mostrarPelicula() {
-        document.getElementById("pelicula").innerHTML = `<iframe width="560" height="315" src=${this.videoPelicula} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        document.getElementById("peliculas").innerHTML = `<iframe width="560" height="315" src=${this.videoPelicula} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
     }
 }
 
@@ -56,7 +56,7 @@ class Serie extends Video {
     }
 
     mostrarSerie() {
-        document.getElementById("serie").innerHTML = `<iframe width="560" height="315" src=${this.videoSerie} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        document.getElementById("series").innerHTML = `<iframe width="560" height="315" src=${this.videoSerie} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
     }
 }
 
